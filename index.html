@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<div class="main">
+    <header>
+        <h1> <i class="fa-solid fa-credit-card" style="color: aliceblue;"></i>Expense Tracker</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="login-form " id="login-form">
+                <h2>Hello, Welcome!</h2>
+                <label for="loginUsername"> <i class="fa-solid fa-user"></i> Username:</label>
+                <input type="text" id="loginUsername" placeholder="Enter Your Username" required>
+                <label for="loginPassword"><i class="fa-solid fa-lock"></i> Password:</label>
+                <input type="password" id="loginPassword" placeholder="Enter your Password" required>
+                <button id="login-btn">Login</button>
+                <p>Don't have an account? <span id="show-register">Register here</span></p>
+            </div>
+
+             <div class="register-form hidden " id="register-form">
+                <h2>Welcome Back !</h2>
+                <input type="text" id="registerName" placeholder="  Enter Your Name" required>
+                <input type="email" id="registerEmail" placeholder="  Enter Your Email" >
+                <input type="text" id="registerPhone" placeholder="  Enter Your Phone Number" required>
+                <input type="text" id="registerUsername" placeholder="  Enter Your Username" required>
+                <input type="password" id="registerPassword" placeholder="  Enter your Password" required>
+                <input type="password" id="registerConfirmPassword" placeholder="  Confirm your Password" required>
+                <button id="register-btn">Register</button>
+                <p>Already have an account? <span id="show-login">Login here</span></p>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+    <script type="module" src="./js/index.js"></script>
+    
+</body>
+
+</html>
