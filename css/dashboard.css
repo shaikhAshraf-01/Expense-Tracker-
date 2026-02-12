@@ -69,3 +69,168 @@ header .dropdown{
     background: #fff;
     color: black;
 }
+
+.container{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: #e6e0e0;
+    padding: 20px;
+
+}
+.summary{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.summaryCard{
+    width: 100%;
+    height: 160px;
+    color: black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+.income,.expense,.balance{
+    width:280px;
+    height: 110px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c9cfda;
+    border-radius: 12px;
+}
+h4{
+    font-size: 22px;
+    margin: 10px 0 20px 15px;
+}
+p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+/* transaction details */
+
+.list-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-top: 30px;
+}
+
+.list-section h2 {
+  margin-bottom: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+}
+
+.table-header,
+.transaction-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 80px;
+  padding: 12px 10px;
+  align-items: center;
+}
+
+.table-header {
+  font-weight: 600;
+  border-bottom: 2px solid #eee;
+  color: #555;
+}
+
+.transaction-row {
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-row span {
+  font-size: 14px;
+}
+
+.income-text {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.expense-text {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+
+/* add trasaction */
+
+.fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 47%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.fab:hover {
+  background: #1d4ed8;
+  transform: scale(1.1);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-content input,
+.modal-content select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}

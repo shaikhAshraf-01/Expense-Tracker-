@@ -24,13 +24,72 @@
                         <a href="#" id="openSettings">Settings</a>
                         <a href="#" id="logout">Logout</a>
                     </div>
+                </div>  
+            </div>
+        </header>
+        <div class="container">
+            <div class="summary">
+                <h3>Summary</h3>
+                <hr>
+                <div class="summaryCard">
+                    <div class="card income" style="background-color: #b6fcd0; color: #000;">
+                        <h4><i class="fa-solid fa-arrow-trend-up" style="color: #16a34a;"></i> &nbsp; Total Income</h4>
+                        <p>&#8377; <span id="income-amt">20000</span></p>
+                     </div>
+                    <div class="card expense" style="background-color: #f8afaf; color: #000;">
+                        <h4><i class="fa-solid fa-arrow-trend-down" style="color: #dc2626;"></i>&nbsp; Total Expense</h4>
+                        <p>&#8377; <span id="expense-amt">20000</span></p>
+                    </div>
+                    <div class="card balance" style="background-color: plum; color: #000;">
+                        <h4><i class="fa-solid fa-scale-unbalanced" style="color: #2563eb;"></i>&nbsp; Remaining Balance</h4>
+                        <p>&#8377; <span id="balance-amt">0</span></p>
+                    </div>
                 </div>
-                
-                
             </div>
 
-        </header>
+            <div class="list-section">
+  <h2>Transaction Details</h2>
+
+  <div class="transaction-table">
+
+    <div class="table-header">
+      <span>Date</span>
+      <span>Category</span>
+      <span>Type</span>
+      <span>Amount</span>
+      <span>Action</span>
     </div>
+
+    <div id="transactionList">
+      <!-- JS will insert transactions here -->
+    </div>
+
+  </div>
+</div>
+        </div>
+        <button id="openModal" class="fab">
+  +
+</button>
+    </div>
+    <div id="modal" class="modal hidden">
+  <div class="modal-content">
+
+    <h2>Add Transaction</h2>
+
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <input type="text" id="category" placeholder="Category">
+    <input type="number" id="amount" placeholder="Amount">
+    <input type="date" id="date">
+
+    <button id="addBtn">Add Transaction</button>
+    <button id="closeModal">Cancel</button>
+
+  </div>
+</div>
 </body>
 <script src="../js/dashboard.js"></script>
 </html>
